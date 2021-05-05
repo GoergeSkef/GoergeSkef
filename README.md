@@ -10,5 +10,7 @@
 - 😄 Pronouns: MrSalt
 - ⚡ Fun fact: Food is tastless without salt
 
-
+I am a graduate of NMD from jönköping university. 
+In relation to my field of expertice and knowledge acquired, I have build solid knowledge in programing and web infustracture. 
+Finally, in relation to my masters sudies and some elective courses I have also built business and marketing skills.
 
