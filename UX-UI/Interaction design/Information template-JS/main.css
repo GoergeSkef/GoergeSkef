@@ -1,0 +1,239 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+h1, h3 {
+	font-weight: 700;	
+}
+p {
+	line-height: 1.5;
+}
+#site-container {
+	
+	padding: 10px 22px 40px;
+	background-color: #0B0C10 ;
+	max-width: 800px;
+	margin: 0 auto;
+	filter: blur(0px);
+	transition: filter 0.2s ease-out;
+	-webkit-transition: -webkit-filter 0.2s ease-out;
+	color: white;
+	transform: translateZ(0);
+	will-change: filter;
+}
+.platform-container {
+	margin: 0 auto;
+	padding: 22px;
+	background: #E27D60;
+	background: rgba(255,255,255,0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease-out;
+	will-change: opacity;
+	transform: translateZ(0);
+}
+body.platform-showing #site-container {
+		filter: blur(10px);
+	}
+	body.platform-showing.closing #site-container {
+		filter: blur(0px);
+	}
+	body.platform-showing .platform-container {
+	opacity: 1;
+	visibility: visible;
+}
+body.platform-showing.closing .platform-container {
+	opacity: 0;
+}
+
+.platform-container .platform {
+	background: #fff;
+	padding: 22px 33px;
+	max-width: 550px;
+	width: 100%;
+	border-radius: 4px;
+	color: black;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	color: #0B0C10;
+
+	transition: top 0.2s ease-out, transform 0.2s ease-out;
+
+	box-shadow: 0 22px 55px rgba(0,0,0,0.5);
+	transform: translate(-50%, -50%) 
+				translateZ(0)
+				scale(0.9) 
+				rotateX(60deg);
+
+	/* Getting the GPU to handle it - the NEW way */
+	will-change: top, transform;
+}
+
+body.platform-showing .platform-container .platform {
+		top: 50%;
+		transform: translate(-50%, -50%) /* keep trick for correct positioning */
+				   translateZ(0) /* Getting the GPU to handle it - the old way */
+				   scale(1) /* zoom in to scale 1:1 */
+		   	   	   rotateX(0);
+		   	   	   background-color: #45A29E;
+}
+body.platform-showing.closing .platform-container .platform {
+		top: 45%;
+		transform: translate(-50%, -50%) /* keep trick for correct positioning */
+				   translateZ(0) /* Getting the GPU to handle it - the old way */
+				   scale(0.9) /* zoom in to scale 1:1 */
+		   	   	   rotateX(60deg);
+}
+	.button {
+	display: inline-block;
+	line-height: 33px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0 18px;
+	font-size: 14px;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.button.big {
+	font-size: 18px;
+	padding: 0 33px;
+	line-height: 55px;
+
+}
+.button {
+	display: inline-block;
+	color: #1F2833;
+	background-color: #66FCF1;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	
+	
+}
+.button.cancel {
+	line-height: 45px;
+	font-size: 18px;
+	
+}
+label {
+	display: block;
+	font-size: 14px;
+}
+label + label {
+	margin-top: 20px;
+}
+input {
+	-webkit-appearance: none;
+	border: none;
+}
+input[type='text'],
+input[type='email'] ,
+select {
+	border: solid 1px #ddd;
+	padding: 10px 6px;
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	line-height: 1;
+	
+}
+.checkbox {
+	margin: 2px 0px 25px 0px;
+	width: 100%;
+	font-size: 16px;
+	
+	
+}
+input[type='submit'] {
+	background: #0B0C10;
+	padding: 0 18px;
+	color: #fff;
+	line-height: 45px;
+	font-size: 18px;
+	display: inline-block;
+	margin-top: 28px;
+	margin-right: 10px;
+	border-radius: 2PX;
+
+}
+
+
+select {
+    height:41px;
+    line-height:41px;
+    border-radius: 0;
+    width: 20%;
+}
+
+.for-Yes {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+.for-Yes.show {
+	max-height: 170px;
+}
+.for-Yes label:first-child {
+	margin-top: 18px;
+}
+
+*[required].error {
+	background-color: #f5e8e8;
+	border-color: #e30b00;
+	color: #e30b00;
+}
+
+.errormessage {
+	color: #e30b00;
+	line-height: 22px;
+	font-size: 13px;
+	font-weight: 500;
+
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+*[required].error + .errormessage {
+	max-height: 22px;
+}
+
+.hide{
+	
+	display: none;
+	
+}
+	 
+ 
+#thanks {
+	background: #0B0C10;
+	color: white;
+	padding: 10px 13px;
+	height: 120px;
+	width: 360px;
+	border-radius: 4px;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 150px;
+        }
+
+       
