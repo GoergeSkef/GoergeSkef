@@ -1,0 +1,59 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.title {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 35px;
+}
+
+.header-image {
+  width: 100%;
+}
+
+#mainmenu {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#mainmenu a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+#mainmenu a:hover {
+  text-decoration: underline;
+}
+
+#mainmenu a.active {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  background-color: #6b6b6b;
+  background-color: #545454;
+  color: white;
+  padding: 30px;
+  font-size: 12px;
+}
+
+
+. {
+  height: 200px;
+}

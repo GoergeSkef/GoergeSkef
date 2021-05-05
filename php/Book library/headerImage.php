@@ -1,0 +1,1 @@
+<img src="books.jpg" class="header-image">
