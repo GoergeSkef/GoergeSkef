@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-<!--
+
 - 🔭 I’m currently working on my thesis paper and looking for a job.
 - 🌱 I’m currently learning Python.
 - 👯 I’m looking to collaborate on app development with identified market potential. I can give shares to someone interested and capable to contribute in android and ios app deelopment.
@@ -11,4 +11,4 @@
 - ⚡ Fun fact: Food is tastless without salt
 
 
--->
+
